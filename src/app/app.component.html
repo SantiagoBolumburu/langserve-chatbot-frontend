@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Messaging App</h1>
+
+  <div class="message-form">
+    <input [(ngModel)]="messageText" placeholder="Type a message..." />
+    <button (click)="sendMessage()">Send</button>
+  </div>
+
+  <div class="message-list">
+    <h3>Messages</h3>
+    <ul>
+      <li *ngFor="let msg of messages">{{ msg }}</li>
+    </ul>
+  </div>
+</div>
